@@ -1,16 +1,16 @@
-# ex 1
+#1
 int
-# ex 2
+#2
 str
-# ex 3
+#3
 float
-# ex 4
+#4
 list
-# ex 5
+#5
 tuple
-# ex 6
+#6
 dict
-# ex 7
+#7
 bool
-# ex 8
+#8
 

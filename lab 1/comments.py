@@ -1,6 +1,8 @@
-# ex 1
+#1
 # This is a comment
-# ex 2
+
+
+#2
 """
 This is a comment
 written in 
