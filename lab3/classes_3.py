@@ -14,6 +14,10 @@ class Rectangle(Shape):
     def area(self):
         return self.length * self.width
 
-
-rect = Rectangle(int(input()), int(input()))
-print(rect.area())
+while True:
+	try:
+	    a, b = map(int, input().split())
+	    rect = Rectangle(a, b)
+	    print(rect.area())
+	except ValueError:
+		break

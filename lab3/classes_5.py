@@ -1,4 +1,4 @@
-class Bank:
+class Bank_account:
     def __init__(self, fname, lname, balance):
         self.fname = fname
         self.lname = lname
@@ -11,7 +11,9 @@ class Bank:
         else:
             print("A deposit cannot be negative")
     def withdraw(self, num2):
-        if num2 <= self.balance:
+        if num2 < 0:
+            print("You cannot withdraw a negative amount of money")
+        elif 0 <= num2 <= self.balance:
             self.balance -= num2
             print(self.fname, self.lname, "has", self.balance)
         else:
@@ -19,7 +21,16 @@ class Bank:
 
 fname, lname, n = input().split()
 n = int(n)
-account = Bank(fname, lname, n)
+account = Bank_account(fname, lname, n)
 
-account.deposit(int(input()))
-account.withdraw(int(input()))
+
+while True:
+    try:
+        s, a = input().split()
+        a = int(a)
+        if s == "withdraw":
+            account.withdraw(a)
+        elif s == "deposit":
+            account.deposit(a)
+    except ValueError:
+        break

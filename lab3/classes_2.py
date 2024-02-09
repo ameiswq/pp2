@@ -17,6 +17,5 @@ class square(shape):
 Shape = shape()
 print(Shape.area())
 
-
 Square = square(int(input()))
 print(Square.area())
