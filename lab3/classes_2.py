@@ -14,8 +14,5 @@ class square(shape):
         return self.length ** 2
 
 
-Shape = shape()
-print(Shape.area())
-
 Square = square(int(input()))
 print(Square.area())
